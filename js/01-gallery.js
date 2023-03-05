@@ -39,14 +39,12 @@ function openModalWindow(e) {
     window.addEventListener('keydown', onEscapeClick)
 
     function clouseModalWindow(e) {
-        console.log('clouse')
         originalImgModalMarkup.close()
     }
     
     // Function escape click
     function onEscapeClick(e) {
         if (e.key === 'Escape') {
-            console.log('CLOUSE')
             clouseModalWindow()
             window.removeEventListener('keydown', onEscapeClick)
         }
